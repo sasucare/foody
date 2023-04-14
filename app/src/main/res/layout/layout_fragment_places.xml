@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".View.TrangChuActivity">
+
+        <RadioGroup
+            android:id="@+id/groupDanhMuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdMoiNhat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:gravity="center"
+                android:text="Mới nhất"
+                android:textColor="@drawable/text_change_radio_danhmuc" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="50dp"
+                android:background="@android:color/darker_gray" />
+
+            <RadioButton
+                android:id="@+id/rdDanhMuc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="Danh mục"
+                android:textColor="@drawable/text_change_radio_danhmuc" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="50dp"
+                android:background="@android:color/darker_gray" />
+
+            <RadioButton
+                android:id="@+id/rdViTri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="HCM"
+                android:textColor="@drawable/text_change_radio_danhmuc" />
+        </RadioGroup>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/darker_gray"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/ic_vitri"
+                        android:drawablePadding="10dp"
+                        android:gravity="left|center"
+                        android:padding="10dp"
+                        android:text="Gần tôi" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/ic_blog"
+                        android:drawablePadding="10dp"
+                        android:gravity="left|center"
+                        android:padding="10dp"
+                        android:text="Blogs" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/darker_gray"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/ic_giaohang"
+                        android:drawablePadding="10dp"
+                        android:gravity="left|center"
+                        android:padding="10dp"
+                        android:text="Giao hàng" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/ic_khuyenmai"
+                        android:drawablePadding="10dp"
+                        android:gravity="left|center"
+                        android:padding="10dp"
+                        android:text="Game and fun" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/darker_gray"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/ic_danhgia"
+                        android:drawablePadding="10dp"
+                        android:gravity="left|center"
+                        android:padding="10dp"
+                        android:text="Đánh giá" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/ic_thanhvien"
+                        android:drawablePadding="10dp"
+                        android:gravity="left|center"
+                        android:padding="10dp"
+                        android:text="Top thành viên" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyvleviewPlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->

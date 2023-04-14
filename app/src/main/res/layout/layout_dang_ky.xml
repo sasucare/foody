@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/foodylogo1"
+        />
+
+    <EditText
+        android:id="@+id/edEmailDangKy"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_user"
+        android:hint="@string/mail"
+        android:drawablePadding="10dp"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:password="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:hint="@string/mat_khau" />
+
+    <EditText
+        android:id="@+id/edNhapLaiPassword"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_password"
+        android:hint="Nhập lại mật khẩu"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:password="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDangKy"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/radius_dang_nhap"
+        android:text="Đăng ký"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>
